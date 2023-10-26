@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://8a61f0edxsbb"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_13kxa"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_13kxa")
+
+[node name="TittleLabel" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 33.0
+offset_right = 1153.0
+offset_bottom = 59.0
+theme_type_variation = &"HeaderLarge"
+text = "BAYMAX BIG HERO
+"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 539.0
+offset_top = 188.0
+offset_right = 604.0
+offset_bottom = 207.0
+text = "Start"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
